@@ -1,6 +1,4 @@
 toolbar:
-  - styleselect | bold italic | undo redo
-  - image | link
-plugins:
-  - image
-  - link
+  - formatselect | bold italic underline | alignleft aligncenter alignright alignjustify | outdent indent | undo redo
+block_formats:
+  - Paragraph=p;Header 1=h1;Header 2=h2;Header 3=h3
