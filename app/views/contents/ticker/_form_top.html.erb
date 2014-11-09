@@ -1,3 +1,4 @@
+<%= tinymce_assets %>
 <fieldset>
   <legend><span><%=t('.type_your_message')%></span></legend>
 
@@ -9,7 +10,8 @@
   </div>
 
   <div class="clearfix">
-    <%= form.text_area :data, :class => 'word_count fillWidth', :rows => 3, :autofocus => true, "data-url" => preview_contents_path %>
+    <%= form.text_area :data, :class => 'word_count fillWidth tinymce', :rows => 3, :autofocus => true, "data-url" => preview_contents_path %>
+    <%= tinymce %>
     <div class="row-fluid">
       <div class="span6">
         <div>

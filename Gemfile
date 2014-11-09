@@ -24,8 +24,7 @@ if File.exists?("#{basedir}/Gemfile.local")
   eval File.read("#{basedir}/Gemfile.local")
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
+# Gems used only for assets
 gem 'sass-rails'
 gem 'sprockets', '~> 2.11.3'
 gem 'therubyracer', :platforms => :ruby
@@ -37,6 +36,7 @@ gem 'turbolinks'
 gem 'jquery-timepicker-rails'
 gem 'bootstrap-datepicker-rails'
 gem 'twitter-bootstrap-rails-confirm'
+gem 'tinymce-rails'
 
 #RMagick is used for image resizing and processing
 gem 'rmagick', :require => 'RMagick', :platforms => :ruby
